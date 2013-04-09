@@ -1,0 +1,4 @@
+AuthName "authorization"
+AuthType Basic
+AuthUserFile /home/tpatpr84/public_html/auto/.htpasswd
+Require valid-user

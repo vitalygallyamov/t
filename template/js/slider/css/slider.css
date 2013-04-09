@@ -1,0 +1,32 @@
+#slider-box{
+    position: relative;
+    overflow: hidden;
+}
+#slider-box .slider{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+#slider-box .s-item{
+    float: left;
+}
+#slider-box .move-left, #slider-box .move-right{
+    position: absolute;
+    top: 0;
+    z-index: 20;
+    cursor: pointer;
+}
+#slider-box .move-left{
+    left: 0;
+}
+#slider-box .move-right{
+    right: 0;
+}
+#slider-box .slider-nav{
+    position: absolute;
+    z-index: 20;
+}
+#slider-box .slider-nav span{
+    cursor: pointer;
+}

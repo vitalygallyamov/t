@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<resource>
+<name>tpatp.ru - ОАО "Тобльское ПАТП"</name>
+<date>27.05.2011 11:30:00</date>
+<region>Тюменская область</region>
+<city>Тобольск</city>
+<description>Официальный сайт ОАО "Тобольское ПАТП", расписание автобусов</description>
+<keywords>распичание автобусов, Тобольск, ПАТП</keywords>
+<person>Глубоковских Андрей</person>
+<private>1</private>
+<phone>+7(3456)25-26-37</phone>
+<address>ул. С.Ремезова, 89</address>
+<sections>
+<section>Автомобили</section>
+<section>Автобизнес, перевозки</section>
+</sections>
+</resource>

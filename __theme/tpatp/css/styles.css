@@ -1,0 +1,773 @@
+@font-face {
+    font-family: 'helioscondregular';
+    src: url('fonts/he_cn__-webfont.eot');
+    src: url('fonts/he_cn__-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/he_cn__-webfont.woff') format('woff'),
+         url('fonts/he_cn__-webfont.ttf') format('truetype'),
+         url('fonts/he_cn__-webfont.svg#helioscondregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+    background: center top no-repeat url("../images/bg-top.jpg");
+    font: normal 14px Tahoma;
+}
+h1, h2, h3, h4{
+    font-weight: normal;
+}
+a:hover{ text-decoration: none;}
+a.green, a.grey{
+    color: #fff;
+    text-decoration: none;
+    font-size: 12px;
+    padding: 7px 15px;
+}
+a.green{ background: repeat-x center url("../images/green_bg.gif");}
+form input[type='submit']{
+    color: #fff;
+    border: none;
+    display: inline-block;
+    text-decoration: none;
+    font-size: 12px;
+    padding: 7px 15px;
+    background: repeat-x center url("../images/green_bg.gif");
+}
+a.grey{background: repeat-x center url("../images/grey_bg.gif");}
+.both{clear: both;}
+
+a.more-link{
+    padding-right: 15px;
+    background: no-repeat bottom right url("../images/more-link.png");
+    color: #0076d3;
+    font-size: 12px;
+}
+section h1{
+    font-size: 28px;
+    text-transform: uppercase;
+    margin-bottom: 13px;
+    font-family: 'helioscondregular', Tahoma;
+}
+section h2{
+    font-size: 22px;
+    text-transform: uppercase;
+}
+
+#main{
+    background: center bottom no-repeat url("../images/bg-down.jpg");
+    min-height: 1000px;
+}
+.center-block{
+    width: 1000px;
+    margin: 0 auto;
+}
+header{
+    height: 120px;
+}
+    header img{
+        float: left;
+        margin: 20px 0 0 10px;
+    }
+    header .phones{
+        float: right;
+        font-size: 12px;
+        color: #7c7c7d;
+        margin-right: 25px;
+        margin-top: 20px;
+    }
+        header .phones span{
+            font-size: 14px;
+            color: #000;
+        }
+            header .phones span span{
+                font-size: 25px;
+            }
+    header a.contact-butt, header a.contact-butt:visited{
+        font-size: 12px;
+        color: #0076d3;
+        display: block;
+        float: right;
+        border: 1px solid #e8e8e8;
+        padding: 8px 18px 10px 10px;
+        background: no-repeat #fff 68px 8px url("../images/arrow.gif");
+        margin-right: 160px;
+        margin-top: 25px;
+    }
+#content{
+    
+}
+    #left-block{
+        width: 230px;
+        float: left;
+    }
+        #left-block nav ul.root{
+            list-style-image: url("../images/marker.png");
+            list-style-position: inside;
+        }
+            #left-block nav ul li.root-item{
+                padding-bottom: 8px;
+                padding-top: 7px;
+                border-bottom: 1px dotted #c8c8c8;
+            }
+                #left-block nav ul li.root-active{
+                    padding-bottom: 0;
+                    background: no-repeat 220px 10px url("../images/active-item.jpg");
+                }
+            #left-block nav ul li.root-item a, #left-block nav ul li.root-item a:visited{
+                text-decoration: none;
+                font-size: 12px;
+            }
+            #left-block nav ul li a, #left-block nav ul li a:visited{color: #0076d3;}
+            #left-block nav ul li a:hover{
+                color: #005293;
+            }
+        /*----sub menu----*/
+        #left-block nav ul.sub-menu{
+            margin-top: 7px;
+            background-color: #f6f6f6;
+        }
+            #left-block nav ul.sub-menu li.sub-item{
+                padding: 2px 0 3px 0;
+            }
+            #left-block nav ul.sub-menu li.sub-item a{
+                font-size: 11px;
+                margin-left: 20px;
+            }
+            #left-block nav ul.sub-menu li.sub-item-active{
+                background: no-repeat 220px 10px url("../images/active-subitem.jpg");
+            }
+        /*----sub sub menu----*/
+        #left-block nav ul.sub-sub-menu{
+            margin-top: 7px;
+            background-color: #e8e8e8;
+        }
+            #left-block nav ul.sub-sub-menu li.sub-sub-item{
+                padding: 2px 0 3px 0;
+                padding-left: 20px;
+            }
+            #left-block nav ul.sub-sub-menu li.sub-sub-item a{
+                font-size: 11px;
+                margin-left: 20px;
+            }
+    #left-block section{
+        margin-top: 15px;
+    }
+        #left-block section h2{
+            margin-bottom: 15px;
+        }
+        #left-block section p{
+            font-size: 12px;
+            line-height: 2;
+            padding-right: 15px;
+        }
+        
+    #breadcrumbs{
+        height: 15px;
+        margin-bottom: 10px;
+    }
+        #breadcrumbs ul{
+            list-style-type: none;
+        }
+            #breadcrumbs ul li{
+                float: left;
+                margin-right: 10px;
+                font-size: 11px;
+                color: #7c7c7c;
+            }
+            #breadcrumbs ul li a, #breadcrumbs ul li a:visited{
+                color: #7c7c7c;
+            }
+    #pager{
+        background-color: #f6f6f6;
+        overflow: hidden;
+        padding: 5px;
+    }
+        #pager ul{
+            list-style: none;
+        }
+        #pager li{
+            float: left;
+            padding: 4px 7px;
+            font-size: 12px;
+        }
+        #pager li.active{
+            background-color: #e0e0e0;
+            -webkit-border-radius: 5px;
+            border-radius: 5px;
+        }
+        #pager a, #pager a:visited{
+            color: #0076d3;
+        }
+    #content-block{
+        width: 750px;
+        float: left;
+        margin-left: 15px;
+    }
+        /*----schedule_block----*/
+        #schedule-block{
+            width: 420px;
+            float: left;
+            background: url("../images/dotted_bg.gif");
+            padding: 15px 25px;
+            -webkit-border-radius: 3px;
+            border-radius: 3px;
+            -webkit-box-shadow:  0px 2px 3px 0px #bdbdbd;
+            box-shadow:  0px 2px 3px 0px #bdbdbd;
+        }
+            #schedule-block .shedule-text{
+                font-size: 12px;
+                margin-top: 20px;
+            }
+            #schedule-block .shedule-text span{
+                font-size: 18px;
+            }
+            #schedule-block form{
+                margin-top: 15px;
+            }
+                #schedule-block form div.select{
+                    background-image: none;
+                    background-color: #fff;
+                    width: 220px;
+                    font: normal 12px Tahoma;
+                    box-shadow: none;
+                    color: #6c6c6c;
+                }
+                    #schedule-block form div.select .text{
+                        padding-top: 7px;
+                    }
+                #schedule-block form span.jq-checkbox{
+                    box-shadow: none;
+                    background-color: #fff;
+                    background-image: none;
+                    width: 15px;
+                    height: 15px;
+                }
+                #schedule-block form span.jq-checkbox.checked span{
+                    width: 11px;
+                    height: 11px;
+                }
+                #schedule-block form label{
+                    font-size: 12px;
+                    color: #6c6c6c;
+                }
+                #schedule-block form .styler{
+                    width: 255px;
+                    box-shadow: none;
+                    font: normal 12px Tahoma;
+                    color: #6c6c6c;
+                }
+                #schedule-block table{
+                    width: 100%;
+                }
+                    #schedule-block table td{
+                        height: 35px;
+                        vertical-align: middle;
+                    }
+                    #schedule-block table td.label{
+                        width: 170px;
+                    }
+            #schedule-block .submit{
+                margin-top: 15px;
+                text-align: right;
+            }
+        /*----buses----*/
+        #buses{
+            padding-top: 15px;
+            width: 227px; /* +2px для бордера*/
+            float: left;
+            margin-left: 15px;
+        }
+            #buses h2{
+                color: #0076d3;
+                margin-bottom: 15px;
+            }
+            #buses .slider{
+                border: 1px solid #c0c0c0;
+            }
+            #buses .arrows{
+                height: 59px;
+                background: repeat-x center url("../images/bus-slider-bg.gif");
+            }
+        #main-slider{
+            margin-top: 10px;
+            margin-bottom: 20px;
+        }
+        #main-slider .move-left, #main-slider .move-right{
+            top: 85px;
+        }
+        #main-slider .slider-nav{
+            bottom: 10px;
+            right: 10px;
+        }
+            #main-slider .slider-nav span{
+                display: inline-block;
+                width: 11px;
+                height: 11px;
+                margin-left: 10px;
+                background: no-repeat -11px 0 url("../images/slider-nav.png");
+            }
+            #main-slider .slider-nav span.current-nav{
+                background: no-repeat 0 0 url("../images/slider-nav.png");
+            }
+        /*----Блок новости и вакансии---*/
+        #news-block, #jobs-block{
+            float: left;
+        }
+        #news-block{
+            width: 470px;
+            margin-right: 15px;
+        }
+        #jobs-block{
+            width: 200px;
+        }
+        #news-block h2, #jobs-block h2{
+            margin-bottom: 15px;
+        }
+            #news-block article{
+                padding-bottom: 10px;
+                margin-top: 15px;
+                border-bottom: 1px solid #c8c8c8;
+            }
+            #news-block article img{
+                float: left;
+                border: 1px solid #c8c8c8;
+            }
+            #news-block article a, #news-block article a:visited{
+                font: normal 15px Tahoma;
+                color: #0076d3;
+            }
+            #news-block article p, #news-block article h3, #news-block article div.news-date{
+                padding-left: 115px;
+            }
+            #news-block article div.news-date{
+                font-size: 11px;
+                color: #cdced0;
+                margin-bottom: 5px;
+            }
+            #news-block article p{
+                font-size: 12px;
+                padding-right: 40px;
+            }
+            #news-block article h3{
+                margin-bottom: 5px;
+            }
+            #jobs-block p{
+                font-size: 14px;
+            }
+            #jobs-block ul{
+                list-style: inside url("../images/jobs-list.gif");
+                margin-top: 10px;
+            }
+            #jobs-block ul li{
+                padding-bottom: 20px;
+                font-size: 12px;
+            }
+            #jobs-block .more-block{
+                margin-bottom: 10px;
+            }
+            #jobs-block .green{
+                padding: 7px 23px;
+            }
+footer{
+    height: 250px;
+}
+    footer p{
+        font-size: 12px;
+        float: left;
+        margin-left: 240px;
+        margin-top: 100px;
+    }
+    footer img{
+        float: right;
+        margin: 150px 180px 0 0;
+    }
+    footer p span{
+        font-size: 16px;
+    }
+/*--------------------------------NEWS--------------------------------------*/
+section#news{
+    
+}
+    section#news article{
+        min-height: 105px;
+        margin-bottom: 15px;
+    }
+        section#news article .news-item{
+            float: left;
+            width: 550px;
+            height: 105px;
+            border-bottom: 1px solid #c8c8c8;
+        }
+        section#news article .news-image{
+            float: left;
+            margin-right: 15px;
+        }
+        section#news article img{
+            border: 3px solid #fff;
+            background-color: #fff;
+            -webkit-box-shadow:  0px 1px 1px 0px #777;
+            box-shadow:  0px 1px 1px 0px #777;
+        }
+        section#news article a, section#news article a:visited {
+            font-size: 22px;
+            color: #0072bc;
+        }
+        section#news article .news-date, section#news-detail article .news-date{
+            font-size: 12px;
+            color: #061921;
+            font-weight: bold;
+            margin-bottom: 13px;
+        }
+        section#news article p, section#news-detail article p{
+            font-size: 12px;
+            color: #061921;
+        }
+    section#news-detail article{
+        padding-right: 15px;
+    }
+    section#news-detail h2{
+        text-transform: none;
+        font-size: 22px;
+        margin-bottom: 15px;
+    }
+        section#news-detail article img{
+            border: 3px solid #fff;
+            background-color: #fff;
+            -webkit-box-shadow:  0px 1px 1px 0px #777;
+            box-shadow:  0px 1px 1px 0px #777;
+            float: left;
+            margin: 0 10px 10px 0;
+        }
+        section#news-detail article a, section#news-detail article a:visited{
+            font-size: 12px;
+            color: #0076d3;
+        }
+    /*------schedule-------*/
+    #schedule h2{
+        text-transform: none;
+        float: left;
+    }
+    #schedule .link{
+        float: left;
+        font-size: 12px;
+        margin-left: 15px;
+        color: #0076d3;
+        text-decoration: none;
+        border-bottom: 1px dashed #0076d3;
+        padding-top: 7px;
+    }
+    #schedule .link:hover{
+        border: none;
+    }
+    #schedule form{
+        background: url("../images/dotted_bg.gif");
+        padding: 15px 25px;
+        margin-top: 15px;
+    }
+    #schedule .form-title{
+        font-size: 12px;
+    }
+        #schedule .form-title span{
+            font-size: 18px;
+        }
+        #schedule .form-title a{
+            color: #0072bc;
+            margin-left: 30px;
+        }
+    #schedule form div.select{
+        background-image: none;
+        background-color: #fff;
+        width: 220px;
+        box-shadow: none;
+        font: normal 12px Tahoma;
+        color: #6c6c6c;
+    }
+        #schedule form div.select .text{
+            padding-top: 7px;
+        }
+                #schedule form span.jq-checkbox{
+                    box-shadow: none;
+                    background-color: #fff;
+                    background-image: none;
+                    width: 15px;
+                    height: 15px;
+                }
+                #schedule form span.jq-checkbox.checked span{
+                    width: 11px;
+                    height: 11px;
+                }
+                #schedule form label{
+                    font-size: 12px;
+                    color: #6c6c6c;
+                }
+                #schedule form .styler{
+                    width: 255px;
+                    box-shadow: none;
+                    font: normal 12px Tahoma;
+                    color: #6c6c6c;
+                }
+                #schedule table{
+                    width: 100%;
+                    margin-top: 15px;
+                }
+                    #schedule table td{
+                        height: 35px;
+                        vertical-align: middle;
+                    }
+                    #schedule table td.label{
+                        width: 170px;
+                    }
+            #schedule .submit{
+                margin-top: 15px;
+            }
+/*------photogallery_albums-------*/
+#photogallery h2{
+    text-transform: none;
+}
+#albums div.album{
+    float: left;
+    margin-right: 15px;
+    width: 230px;
+    height: 250px;
+    margin-bottom: 20px;
+}
+#albums div img, #album img{
+    border: 3px solid #fff;
+    -webkit-box-shadow:  0px 1px 1px 0px #555;
+            box-shadow:  0px 1px 1px 0px #555;
+}
+#albums div a{
+    color: #0072bc;
+    font-size: 18px;
+}
+#album{
+    margin-top: 10px;
+}
+#album img{
+    float: left;
+    margin-right: 15px;
+    width: 125px;
+    margin-bottom: 10px;
+}
+/*------text-------*/
+#text h2{
+    text-transform: none;
+    margin-bottom: 15px;
+}
+#text .green{
+    float: right;
+}
+#text p{
+    font-size: 12px;
+    margin-bottom: 20px;
+}
+    #text p a{
+        color: #0076d3;
+    }
+#text ul{
+    list-style: inside url("../images/jobs-list.gif");
+    font-size: 12px;
+    margin-left: 50px;
+}
+    #text ul li{
+        margin-bottom: 10px;
+    }
+#text ol{
+    list-style-position: inside;
+    font-size: 12px;
+}
+    #text ol ol{
+        list-style-position: inside;
+        list-style-type: none;
+        margin-top: 15px;
+    }
+        #text ol ol li{
+            margin-left: 50px;
+            margin-bottom: 15px;
+        }
+        #text ol ol li:before {
+            display: inline-block;
+            margin-right: .55em;
+            text-align: right;
+            width: .95em;
+        }
+        #text ol ol li:first-child:before {content: "а)";}
+        #text ol ol li:nth-child(2):before{content: "б)";}
+        #text ol ol li:nth-child(3):before{content: "в)";}
+        #text ol ol li:nth-child(4):before{content: "г)";}
+        #text ol ol li:nth-child(5):before{content: "д)";}
+        #text ol ol li:nth-child(6):before{content: "е)";}
+        #text ol ol li:nth-child(7):before{content: "ж)";}
+        #text ol ol li:nth-child(8):before{content: "з)";}
+        #text ol ol li:nth-child(9):before{content: "и)";}
+        #text ol ol li:nth-child(10):before{content: "к)";}
+#text table{
+    width: 100%;
+    font-size: 12px;
+    line-height: 1.5;
+}
+    #text table th{
+        background-color: #e4e4e4;
+        font-weight: normal;
+        vertical-align: middle;
+        padding: 10px 5px;
+        border: 2px solid #fff;
+    }
+    #text table td{
+        background-color: #f6f6f6;
+        padding: 7px;
+        border: 2px solid #fff;
+    }
+/*------book of honor-------*/
+    #honor-book article h2{
+        text-transform: none;
+    }
+    #honor-book article{
+        min-height: 105px;
+        margin-bottom: 15px;
+    }
+        #honor-book article .honor-item{
+            float: left;
+            width: 550px;
+            height: 175px;
+            border-bottom: 1px solid #c8c8c8;
+        }
+        #honor-book article .honor-image{
+            float: left;
+            margin-right: 15px;
+        }
+        #honor-book article img{
+            border: 3px solid #fff;
+            background-color: #fff;
+            -webkit-box-shadow:  0px 1px 1px 0px #777;
+                    box-shadow:  0px 1px 1px 0px #777;
+        }
+        #honor-book article .human{
+            font-size: 12px;
+            color: #061921;
+            font-weight: bold;
+            margin-bottom: 13px;
+        }
+        #honor-book article p{
+            font-size: 12px;
+            color: #061921;
+            padding-right: 15px;
+        }
+/*------guest-book-------*/
+#guest-book ul{
+    list-style: inside url("../images/jobs-list.gif");
+    font-size: 12px;
+}
+    #guest-book ul li{
+        margin-bottom: 10px;
+    }
+    #guest-book ul a{
+        color: #0076d3;
+        text-decoration: none;
+    }
+#guest-book .question{
+    font-size: 12px;
+    margin-bottom: 15px;
+}
+    #guest-book .question .q-head{
+        color: #7c7c7d;
+        margin-bottom: 5px;
+    }
+    #guest-book .question .q-head strong{
+        color: #000;
+    }
+#guest-book .answer{
+    padding: 10px;
+    background-color: #f6f6f6;
+    margin-bottom: 15px;
+    font-size: 12px;
+    overflow: hidden;
+}
+    #guest-book .answer img{
+        float: left;
+    }
+    #guest-book .answer strong{
+        display: block;
+        padding-left: 85px;
+        margin-bottom: 5px;
+    }
+    #guest-book .answer p{
+        padding-left: 85px;
+    }
+form.right{
+    float: right;
+    width: 200px;
+    padding: 15px;
+    background: url("../images/dotted_bg.gif");
+    margin-left: 15px;
+    margin-bottom: 10px;
+}
+    form.right .title{
+        font-size: 18px;
+        margin-bottom: 15px;
+    }
+    form.right input, form.right textarea{
+        margin-bottom: 15px;
+        width: 180px;
+        box-shadow: none;
+    }
+    form.right .styler{
+        box-shadow: none;
+        font: normal 12px Tahoma;
+        color: #6c6c6c;
+    }
+    form.right label{
+        color: #6c6c6c;
+        font-size: 12px;
+    }
+    form.right textarea{
+        height: 50px;
+    }
+    form.right .capcha-block img{
+        float: left;
+        margin-right: 10px;
+    }
+    form.right .capcha-block input{
+        width: 90px;
+    }
+    form.right .submit{
+        float: right;
+        width: 100px;
+        margin-bottom: 0;
+        cursor: pointer;
+    }
+/*---------Order bus---------*/
+#order-bus{
+    margin-top: 15px;
+}
+#order-bus .bus-item{
+    float: left;
+    margin-right: 15px;
+}
+#order-bus h3{
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+#order-bus img{
+    border: 3px solid #fff;
+    -webkit-box-shadow:  0px 1px 1px 0px #777;
+            box-shadow:  0px 1px 1px 0px #777;
+}
+#order-bus ul{
+    list-style: inside url("../images/jobs-list.gif");
+}
+    #order-bus .bus-item{
+        min-height: 350px;
+    }
+    #order-bus ul li{
+        margin-bottom: 7px;
+        font-size: 12px;
+    }
+    #order-bus ul li span{
+        color: #7c7c7d;
+        padding-left: 10px;
+    }
+    #order-bus .order-butt{
+        margin-top: 10px;
+        text-align: right;
+    }

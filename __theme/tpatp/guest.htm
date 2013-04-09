@@ -1,0 +1,147 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+	<meta name="author" content="vitaly" />
+
+    <link href="css/reset.css" rel="stylesheet"/>
+    <link href="js/formstyler/jquery.formstyler.css" rel="stylesheet" />
+    <link href="js/slider/css/slider.css" rel="stylesheet" />
+    
+    <link href="css/styles.css" rel="stylesheet" type="text/css" />
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+    <script src="js/formstyler/jquery.formstyler.min.js"></script>
+    <script src="js/slider/slider.jquery.js"></script>
+    
+    <script>
+    (function($){
+        $(function(){
+            $('#schedule-form select, #schedule-form input:checkbox').styler();
+            $('#slider-box').slider({width: 714, height: 240});
+        });
+    })(jQuery);
+    </script>
+
+	<title>ТПАТП</title>
+</head>
+
+<body>
+
+<div id="main">
+    <div class="center-block">
+        <header>
+            <a href="/"><img alt="ТПАТП" src="images/logo.png"/></a>
+            <a class="contact-butt" href="#contacts">Контакты</a>
+            <div class="phones">
+                <div>Телефон / факс приемной:&nbsp;&nbsp;&nbsp;&nbsp;<span>8 (3456) <span>25-26-37</span></span></div>
+                <div>Телефон / факс приемной:&nbsp;&nbsp;&nbsp;&nbsp;<span>8 (3456) <span>25-26-37</span></span></div>
+            </div>
+        </header>
+        <div id="content">
+            <div id="left-block">
+                <nav>
+                    <ul class="root">
+                        <li class="root-item"><a href="#menu">О компании</a></li>
+                        <li class="root-item"><a href="#menu">О компании</a></li>
+                        <li class="root-item root-active">
+                            <a href="#menu">Пассажирам</a>
+                            <ul class="sub-menu">
+                                <li class="sub-item sub-item-active">
+                                    <a href="#menu">&mdash;&nbsp;&nbsp;Расписание движения</a>
+                                    <ul class="sub-sub-menu">
+                                        <li class="sub-sub-item"><a href="#menu">&ndash;&nbsp;&nbsp;Расписание движения</a></li>
+                                        <li class="sub-sub-item"><a href="#menu">&ndash;&nbsp;&nbsp;Расписание движения</a></li>
+                                        <li class="sub-sub-item"><a href="#menu">&ndash;&nbsp;&nbsp;Расписание движения</a></li>
+                                    </ul>
+                                </li>
+                                <li class="sub-item"><a href="#menu">&mdash;&nbsp;&nbsp;Расписание движения</a></li>
+                                <li class="sub-item"><a href="#menu">&mdash;&nbsp;&nbsp;Расписание движения</a></li>
+                            </ul>
+                        </li>
+                        <li class="root-item"><a href="#menu">О компании</a></li>
+                        <li class="root-item"><a href="#menu">О компании</a></li>
+                        <li class="root-item"><a href="#menu">О компании</a></li>
+                        <li class="root-item"><a href="#menu">О компании</a></li>
+                        <li class="root-item"><a href="#menu">О компании</a></li>
+                        <li class="root-item"><a href="#menu">О компании</a></li>
+                    </ul>
+                </nav>
+                <section>
+                    <h2>Поздравляем!</h2>
+                    <img src="images/tmp/happy.jpg" width="229" height="229" />
+                    <p>Поздравляем всех девушек и женщин с праздником 8 марта! Всегда будьте такими же красивыми, любимыми и замечательными!</p>
+                </section>
+            </div>
+            <div id="content-block">
+                <div id="breadcrumbs">
+                    <ul>
+                        <li><a href="/">Главная</a></li>
+                        <li>&gt;</li>
+                        <li>Новости</li>
+                    </ul>
+                </div>
+                <section id="guest-book">
+                    <form class="right" action="" method="POST">
+                        <div class="title">Написать отзыв</div>
+                        <label for="name">Ваше имя*</label>
+                        <input type="text" class="styler" name="name" value="" />
+                        
+                        <label for="email">Ваш E-mail или телефон*</label>
+                        <input type="text" class="styler" name="email" value="" />
+                        
+                        <label for="msg">Ваш E-mail или телефон*</label>
+                        <textarea name="msg" class="styler"></textarea>
+                        
+                        <label for="capcha">Введите код с картинки*</label>
+                        <div class="capcha-block">
+                            <img class="capcha" src="images/tmp/capcha.jpg" width="79" height="33" />
+                            <input type="text" class="styler" name="capcha" />
+                        </div>
+                        <input type="submit" name="submit" class="submit" value="Отправить" />
+                    </form>
+                    <h1>Часто задаваемые вопросы</h1>
+                    <ul>
+                        <li><a href="#g">Расписание движения</a></li>
+                        <li><a href="#g">Как доехать до вокзала?</a></li>
+                        <li><a href="#g">Как заказать билет?</a></li>
+                        <li><a href="#g">Подобрать автобус</a></li>
+                        <li><a href="#g">Другое</a></li>
+                    </ul>
+                    <div class="question">
+                        <div class="q-head"><strong>Лариса Карловна</strong> 12.01.2013  20:08</div>
+                        <div class="q-body">Прошу разъяснить почему рейсы сформированные в г. Тобольске (госпожой Барсуковой) не предусматривают остановку в г. Тюмени у Дома печати. Это очень неудобно для пассажиров- автобус проезжает центр города из которого можно добраться в любую точку города. В частности я ехала 30 января 2013 в 6 -50. Очень просила водителей, но они не остановились! Почему Вы берете значительные деньги, но удобства для пассажиров не предполагаете. А вот рейсы сформированные в г. Тюмени остановку на доме печати предполагают.</div>
+                    </div>
+                    <div class="answer">
+                        <img src="images/tmp/answer.jpg" width="55" height="55" />
+                        <strong>Ответ: &rarr; Лариса Карловна</strong>
+                        <p>Это да, спрашивать москвичей.... опасно даже, строгие они очень!<br/><br/>С 1992 года я в Россию приезжала раза 4. Так вот, в один из моих приездов из Лондона, я нашла, что в Москве сменили форму оплаты в метро, ввели какие-то новые жетоны. Я грамотно купила жетон, но подойдя к турникету, замешкалась перед тем как бросить его в правильную щелку... нa секундочку замешкалась!</p>
+                    </div>
+                    <div class="question">
+                        <div class="q-head"><strong>Лариса Карловна</strong> 12.01.2013  20:08</div>
+                        <div class="q-body">Прошу разъяснить почему рейсы сформированные в г. Тобольске (госпожой Барсуковой) не предусматривают остановку в г. Тюмени у Дома печати. Это очень неудобно для пассажиров- автобус проезжает центр города из которого можно добраться в любую точку города. В частности я ехала 30 января 2013 в 6 -50. Очень просила водителей, но они не остановились! Почему Вы берете значительные деньги, но удобства для пассажиров не предполагаете. А вот рейсы сформированные в г. Тюмени остановку на доме печати предполагают.</div>
+                    </div>
+                    <div class="answer">
+                        <img src="images/tmp/answer.jpg" width="55" height="55" />
+                        <strong>Ответ: &rarr; Лариса Карловна</strong>
+                        <p>Это да, спрашивать москвичей.... опасно даже, строгие они очень!<br/><br/>С 1992 года я в Россию приезжала раза 4. Так вот, в один из моих приездов из Лондона, я нашла, что в Москве сменили форму оплаты в метро, ввели какие-то новые жетоны. Я грамотно купила жетон, но подойдя к турникету, замешкалась перед тем как бросить его в правильную щелку... нa секундочку замешкалась!</p>
+                    </div>
+                </section>
+            </div>
+            <div class="both"></div>
+        </div> 
+    </div>
+    <footer>
+        <div class="center-block">
+            <p>Справочная автовокзала: 8 (3456) <span>25-84-53, 25-65-55</span><br />Россия, 626150 г.Тобольск 6 мкр. строение 44</p>
+            <img src="images/tmp/counter.gif" width="88" height="31" />
+        </div>
+    </footer>
+</div>
+
+</body>
+</html>

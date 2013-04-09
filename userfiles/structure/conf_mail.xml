@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<conf>
+	<!-- Цвет текста подписей -->
+	<txtColor>0xcccccc</txtColor>
+	<!-- Цвет текста для полей ввода -->
+	<txtInputColor>0x990000</txtInputColor>
+	<!-- Цвет фона формы -->
+	<bgColor>0xffffff</bgColor>
+	<!-- Цвет формы -->
+	<formColor>0x666666</formColor>
+	<!-- Закругление краёв формы -->
+	<roundForm>21</roundForm>
+</conf>

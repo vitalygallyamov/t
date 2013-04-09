@@ -1,0 +1,4 @@
+Options +Includes +FollowSymLinks -Indexes
+AddHandler server-parsed .shtml
+DirectoryIndex index.shtml index.htm index.php index.html
+AddDefaultCharset windows-1251
